@@ -20,6 +20,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "материал",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-материал",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "спрСтуд",
       "relatedTo": "i-i-s-kursovaya-rabota-2-спр-студ",
       "inverse": null
@@ -101,6 +108,33 @@
           "caption": "Фио Студента",
           "name": "спрСтуд",
           "relatedTo": "i-i-s-kursovaya-rabota-2-спр-студ",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование Материала",
+          "lookupValueField": "наименование Материала",
+          "relationName": "Материал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование Материала",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "вид",
+              "caption": "Вид Материала",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Материал",
+          "name": "материал",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-материал",
           "inverse": null
         }
       ],

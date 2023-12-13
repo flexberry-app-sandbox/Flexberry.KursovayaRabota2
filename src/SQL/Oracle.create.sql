@@ -91,6 +91,8 @@ CREATE TABLE "БазДан"
 
 	"Время" DATE NULL,
 
+	"Материал" RAW(16) NOT NULL,
+
 	"СпрСтуд" RAW(16) NOT NULL,
 
 	"ПрикрепКн" RAW(16) NOT NULL,
@@ -342,6 +344,11 @@ ALTER TABLE "Материал"
 	ADD CONSTRAINT "Материал_FДис_4309" FOREIGN KEY ("Дисциплина") REFERENCES "Дисциплина" ("primaryKey");
 
 CREATE INDEX "Материал_IДис_4269" on "Материал" ("Дисциплина");
+
+ALTER TABLE "БазДан"
+	ADD CONSTRAINT "БазДан_FМатер_9242" FOREIGN KEY ("Материал") REFERENCES "Материал" ("primaryKey");
+
+CREATE INDEX "БазДан_IМатериал" on "БазДан" ("Материал");
 
 ALTER TABLE "БазДан"
 	ADD CONSTRAINT "БазДан_FСпрСтуд_0" FOREIGN KEY ("СпрСтуд") REFERENCES "СпрСтуд" ("primaryKey");

@@ -19,6 +19,18 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-kursovaya-rabota-2-баз-дан+материал':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'наименование Материала',
+            required: true,
+            relationName: 'материал',
+            projection: 'МатериалL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 

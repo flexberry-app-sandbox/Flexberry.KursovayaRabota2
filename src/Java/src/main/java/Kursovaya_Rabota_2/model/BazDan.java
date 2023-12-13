@@ -27,6 +27,16 @@ public class BazDan {
     private Date время;
 
     @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Material")
+    @Convert("Material")
+    @Column(name = "Материал", length = 16, unique = true, nullable = false)
+    private UUID _materialid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Material", insertable = false, updatable = false)
+    private Material material;
+
+    @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "SprStud")
     @Convert("SprStud")
     @Column(name = "СпрСтуд", length = 16, unique = true, nullable = false)

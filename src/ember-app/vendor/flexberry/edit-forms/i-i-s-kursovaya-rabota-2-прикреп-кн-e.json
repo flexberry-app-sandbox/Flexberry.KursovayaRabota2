@@ -15,6 +15,14 @@
       "relationName": "БазДан.СпрСтуд",
       "projection": "СпрСтудL",
       "detailModelName": "i-i-s-kursovaya-rabota-2-баз-дан"
+    },
+    {
+      "master": "материал",
+      "displayAttributeName": "наименование Материала",
+      "required": true,
+      "relationName": "БазДан.Материал",
+      "projection": "МатериалL",
+      "detailModelName": "i-i-s-kursovaya-rabota-2-баз-дан"
     }
   ],
   "external": false,

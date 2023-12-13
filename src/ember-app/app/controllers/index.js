@@ -22,25 +22,25 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya-rabota-2-должность-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-должность-l.title'),
-            icon: 'chart line',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-спр-сотр-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.title'),
-            icon: 'briefcase',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-группа-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-группа-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-группа-l.title'),
-            icon: 'edit',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-дисциплина-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-дисциплина-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-дисциплина-l.title'),
-            icon: 'address card',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-спр-студ-l',
@@ -58,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya-rabota-2-материал-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-материал-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-материал-l.title'),
-            icon: 'archive',
+            icon: 'briefcase',
             children: null
           }]
         }

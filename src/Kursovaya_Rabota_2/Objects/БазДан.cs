@@ -32,12 +32,18 @@ namespace IIS.Kursovaya_Rabota_2
             "СпрСтуд as \'Фио Студента\'",
             "СпрСтуд.Фио as \'Фио Студента\'",
             "СпрСтуд.Группа.Наименование as \'Наименование Группы\'",
-            "СпрСтуд.Дисциплина.Наименование as \'Наименование Дисциплины\'"})]
+            "СпрСтуд.Дисциплина.Наименование as \'Наименование Дисциплины\'",
+            "Материал as \'Материал\'",
+            "Материал.Наименование as \'Наименование Материала\'",
+            "Материал.Вид as \'Вид Материала\'"})]
     [MasterViewDefineAttribute("БазДанE", "СпрСтуд", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Студента")]
+    [MasterViewDefineAttribute("БазДанE", "Материал", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование Материала")]
     public class БазДан : ICSSoft.STORMNET.DataObject
     {
         
         private System.DateTime fВремя;
+        
+        private IIS.Kursovaya_Rabota_2.Материал fМатериал;
         
         private IIS.Kursovaya_Rabota_2.СпрСтуд fСпрСтуд;
         
@@ -76,6 +82,40 @@ namespace IIS.Kursovaya_Rabota_2
                 // *** Start programmer edit section *** (БазДан.Время Set end)
 
                 // *** End programmer edit section *** (БазДан.Время Set end)
+            }
+        }
+        
+        /// <summary>
+        /// БазДан.
+        /// </summary>
+        // *** Start programmer edit section *** (БазДан.Материал CustomAttributes)
+
+        // *** End programmer edit section *** (БазДан.Материал CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Материал"})]
+        [NotNull()]
+        public virtual IIS.Kursovaya_Rabota_2.Материал Материал
+        {
+            get
+            {
+                // *** Start programmer edit section *** (БазДан.Материал Get start)
+
+                // *** End programmer edit section *** (БазДан.Материал Get start)
+                IIS.Kursovaya_Rabota_2.Материал result = this.fМатериал;
+                // *** Start programmer edit section *** (БазДан.Материал Get end)
+
+                // *** End programmer edit section *** (БазДан.Материал Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (БазДан.Материал Set start)
+
+                // *** End programmer edit section *** (БазДан.Материал Set start)
+                this.fМатериал = value;
+                // *** Start programmer edit section *** (БазДан.Материал Set end)
+
+                // *** End programmer edit section *** (БазДан.Материал Set end)
             }
         }
         

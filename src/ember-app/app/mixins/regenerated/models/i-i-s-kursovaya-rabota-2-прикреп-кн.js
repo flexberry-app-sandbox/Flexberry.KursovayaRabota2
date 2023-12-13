@@ -54,7 +54,11 @@ export let defineProjections = function (modelClass) {
         дисциплина: belongsTo('i-i-s-kursovaya-rabota-2-дисциплина', '', {
           наименование: attr('Наименование Дисциплины', { index: 3 })
         }, { index: -1, hidden: true })
-      }, { index: 0, displayMemberPath: 'фио Студента' })
+      }, { index: 0, displayMemberPath: 'фио Студента' }),
+      материал: belongsTo('i-i-s-kursovaya-rabota-2-материал', 'Материал', {
+        наименование: attr('Наименование Материала', { index: 5 }),
+        вид: attr('Вид Материала', { index: 6 })
+      }, { index: 4, displayMemberPath: 'наименование Материала' })
     })
   });
 

@@ -6,6 +6,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   время: DS.attr('date'),
+  материал: DS.belongsTo('i-i-s-kursovaya-rabota-2-материал', { inverse: null, async: false }),
   спрСтуд: DS.belongsTo('i-i-s-kursovaya-rabota-2-спр-студ', { inverse: null, async: false }),
   прикрепКн: DS.belongsTo('i-i-s-kursovaya-rabota-2-прикреп-кн', { inverse: 'базДан', async: false })
 });
@@ -16,6 +17,13 @@ export let ValidationRules = {
     validators: [
       validator('ds-error'),
       validator('date'),
+    ],
+  },
+  материал: {
+    descriptionKey: 'models.i-i-s-kursovaya-rabota-2-баз-дан.validations.материал.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
     ],
   },
   спрСтуд: {
@@ -44,6 +52,10 @@ export let defineProjections = function (modelClass) {
       дисциплина: belongsTo('i-i-s-kursovaya-rabota-2-дисциплина', '', {
         наименование: attr('Наименование Дисциплины', { index: 3 })
       }, { index: -1, hidden: true })
-    }, { index: 0, displayMemberPath: 'фио Студента' })
+    }, { index: 0, displayMemberPath: 'фио Студента' }),
+    материал: belongsTo('i-i-s-kursovaya-rabota-2-материал', 'Материал', {
+      наименование: attr('Наименование Материала', { index: 5 }),
+      вид: attr('Вид Материала', { index: 6 })
+    }, { index: 4, displayMemberPath: 'наименование Материала' })
   });
 };
