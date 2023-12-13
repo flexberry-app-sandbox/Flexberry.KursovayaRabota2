@@ -1,0 +1,22 @@
+﻿{
+  "applicationCaption": "Kursovaya_ rabota_2",
+  "applicationTitle": "Kursovaya_ rabota_2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya-rabota-2",
+      "caption": "Kursovaya_Rabota_2",
+      "title": "Kursovaya_Rabota_2",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya-rabota-2-должность-l",
+          "menuName": null,
+          "caption": "Справочник Должности",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
