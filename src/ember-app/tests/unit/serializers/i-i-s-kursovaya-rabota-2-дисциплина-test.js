@@ -9,10 +9,13 @@ moduleForModel('i-i-s-kursovaya-rabota-2-дисциплина', 'Unit | Serializ
     'transform:decimal',
     'transform:guid',
 
+    'transform:i-i-s-kursovaya-rabota-2-вид',
+
     'model:i-i-s-kursovaya-rabota-2-баз-дан',
     'model:i-i-s-kursovaya-rabota-2-группа',
     'model:i-i-s-kursovaya-rabota-2-дисциплина',
     'model:i-i-s-kursovaya-rabota-2-должность',
+    'model:i-i-s-kursovaya-rabota-2-материал',
     'model:i-i-s-kursovaya-rabota-2-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-2-спр-сотр',
     'model:i-i-s-kursovaya-rabota-2-спр-студ',

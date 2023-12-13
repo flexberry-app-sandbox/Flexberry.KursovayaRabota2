@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-2-материал-e",
+  "editForm": "i-i-s-kursovaya-rabota-2-материал-e",
+  "external": false,
+  "caption": "Учебный материал",
+  "name": "IISKursovaya_Rabota_2МатериалL",
+  "className": "МатериалL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-материал",
+      "modelProjection": "МатериалL"
+    }
+  ]
+}

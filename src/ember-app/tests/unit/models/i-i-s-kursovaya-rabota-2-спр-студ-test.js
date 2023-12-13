@@ -7,6 +7,7 @@ moduleForModel('i-i-s-kursovaya-rabota-2-спр-студ', 'Unit | Model | i-i-s
     'model:i-i-s-kursovaya-rabota-2-группа',
     'model:i-i-s-kursovaya-rabota-2-дисциплина',
     'model:i-i-s-kursovaya-rabota-2-должность',
+    'model:i-i-s-kursovaya-rabota-2-материал',
     'model:i-i-s-kursovaya-rabota-2-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-2-спр-сотр',
     'model:i-i-s-kursovaya-rabota-2-спр-студ',

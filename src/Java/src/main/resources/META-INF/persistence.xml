@@ -8,6 +8,7 @@
         <class>Kursovaya_Rabota_2.model.PrikrepKn</class>
         <class>Kursovaya_Rabota_2.model.Dolzhnost</class>
         <class>Kursovaya_Rabota_2.model.SprSotr</class>
+        <class>Kursovaya_Rabota_2.model.Material</class>
         <class>Kursovaya_Rabota_2.model.BazDan</class>
         <class>Kursovaya_Rabota_2.model.Disciplina</class>
         <class>Kursovaya_Rabota_2.model.FlexberryAdvLimit</class>

@@ -69,6 +69,21 @@ CREATE TABLE "СпрСотр"
 ) ;
 
 
+CREATE TABLE "Материал"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Вид" NVARCHAR2(13) NULL,
+
+	"Наименование" NVARCHAR2(255) NULL,
+
+	"Дисциплина" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "БазДан"
 (
 
@@ -322,6 +337,11 @@ ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");
 
 CREATE INDEX "СпрСотр_IДолж_3774" on "СпрСотр" ("Должность");
+
+ALTER TABLE "Материал"
+	ADD CONSTRAINT "Материал_FДис_4309" FOREIGN KEY ("Дисциплина") REFERENCES "Дисциплина" ("primaryKey");
+
+CREATE INDEX "Материал_IДис_4269" on "Материал" ("Дисциплина");
 
 ALTER TABLE "БазДан"
 	ADD CONSTRAINT "БазДан_FСпрСтуд_0" FOREIGN KEY ("СпрСтуд") REFERENCES "СпрСтуд" ("primaryKey");

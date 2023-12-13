@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Kursovaya_Rabota_2",
+  "className": "Вид",
+  "enumObjects": {
+    "УчКн": "Учебная книга",
+    "Методичка": "Методичка"
+  }
+}

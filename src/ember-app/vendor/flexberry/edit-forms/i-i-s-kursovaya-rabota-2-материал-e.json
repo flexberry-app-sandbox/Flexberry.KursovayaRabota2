@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Дисциплина",
+      "projection": "ДисциплинаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Учебный материал",
+  "name": "IISKursovaya_Rabota_2МатериалE",
+  "className": "МатериалE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-материал",
+      "modelProjection": "МатериалE"
+    }
+  ]
+}
