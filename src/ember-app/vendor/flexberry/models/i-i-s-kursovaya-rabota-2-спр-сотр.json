@@ -20,6 +20,20 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "группа",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-группа",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "дисциплина",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-дисциплина",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "должность",
       "relatedTo": "i-i-s-kursovaya-rabota-2-должность",
       "inverse": null
@@ -59,6 +73,48 @@
           "name": "должность",
           "relatedTo": "i-i-s-kursovaya-rabota-2-должность",
           "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Группа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование Группы",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Наименование Группы",
+          "name": "группа",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-группа",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Дисциплина",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование дисциплины",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "Наименование дисциплины",
+          "name": "дисциплина",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-дисциплина",
+          "inverse": null
         }
       ],
       "hasMany": []
@@ -94,6 +150,48 @@
           "caption": "Должность",
           "name": "должность",
           "relatedTo": "i-i-s-kursovaya-rabota-2-должность",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Группа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование группы",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование группы",
+          "name": "группа",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-группа",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Дисциплина",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование дисциплины",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование дисциплины",
+          "name": "дисциплина",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-дисциплина",
           "inverse": null
         }
       ],

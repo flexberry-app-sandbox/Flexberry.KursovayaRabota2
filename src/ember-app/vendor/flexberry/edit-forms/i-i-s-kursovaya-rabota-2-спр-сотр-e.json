@@ -7,6 +7,22 @@
       "relationName": "Должность",
       "projection": "ДолжностьL",
       "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Группа",
+      "projection": "ГруппаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Дисциплина",
+      "projection": "ДисциплинаL",
+      "detailModelName": null
     }
   ],
   "external": false,

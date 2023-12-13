@@ -35,6 +35,10 @@ CREATE TABLE [СпрСотр] (
 
 	 [Фио] VARCHAR(255)  NULL,
 
+	 [Группа] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Дисциплина] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [Должность] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))

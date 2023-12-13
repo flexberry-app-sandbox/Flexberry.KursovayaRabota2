@@ -60,4 +60,56 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.должность "наименование" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya-rabota-2-спр-сотр-e.группа-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.группа
+      relationName="группа"
+      projection="ГруппаL"
+      title=(t "forms.i-i-s-kursovaya-rabota-2-спр-сотр-e.группа-caption")
+      readonly=readonly
+      componentName="группаLookup"
+      class=(if (v-get validationModel "группа" "isInvalid") "error")
+      data-test-i-i-s-kursovaya-rabota-2-спр-сотр-e-группа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "группа" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.группа.наименование
+      class=(if (v-get validationModel.группа "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya-rabota-2-спр-сотр-e.группа.наименование-caption")
+      data-test-i-i-s-kursovaya-rabota-2-спр-сотр-e-группа-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.группа "наименование" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya-rabota-2-спр-сотр-e.дисциплина-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.дисциплина
+      relationName="дисциплина"
+      projection="ДисциплинаL"
+      title=(t "forms.i-i-s-kursovaya-rabota-2-спр-сотр-e.дисциплина-caption")
+      readonly=readonly
+      componentName="дисциплинаLookup"
+      class=(if (v-get validationModel "дисциплина" "isInvalid") "error")
+      data-test-i-i-s-kursovaya-rabota-2-спр-сотр-e-дисциплина=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дисциплина" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.дисциплина.наименование
+      class=(if (v-get validationModel.дисциплина "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya-rabota-2-спр-сотр-e.дисциплина.наименование-caption")
+      data-test-i-i-s-kursovaya-rabota-2-спр-сотр-e-дисциплина-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.дисциплина "наименование" "message")}}
+  </div>
 </form>

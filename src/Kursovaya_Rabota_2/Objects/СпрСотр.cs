@@ -31,16 +31,26 @@ namespace IIS.Kursovaya_Rabota_2
     [View("СпрСотрE", new string[] {
             "Фио as \'Фио Сотрудника\'",
             "Должность as \'Должность\'",
-            "Должность.Наименование as \'Должность\'"})]
+            "Должность.Наименование as \'Должность\'",
+            "Группа as \'Наименование Группы\'",
+            "Группа.Наименование as \'Наименование Группы\'",
+            "Дисциплина as \'Наименование дисциплины\'",
+            "Дисциплина.Наименование as \'Наименование дисциплины\'"})]
     [View("СпрСотрL", new string[] {
             "Фио as \'Фио Сотрудника\'",
-            "Должность.Наименование as \'Должность\'"})]
+            "Должность.Наименование as \'Должность\'",
+            "Группа.Наименование as \'Наименование группы\'",
+            "Дисциплина.Наименование as \'Наименование дисциплины\'"})]
     public class СпрСотр : ICSSoft.STORMNET.DataObject
     {
         
         private string fФио;
         
         private IIS.Kursovaya_Rabota_2.Должность fДолжность;
+        
+        private IIS.Kursovaya_Rabota_2.Группа fГруппа;
+        
+        private IIS.Kursovaya_Rabota_2.Дисциплина fДисциплина;
         
         // *** Start programmer edit section *** (СпрСотр CustomMembers)
 
@@ -76,6 +86,74 @@ namespace IIS.Kursovaya_Rabota_2
                 // *** Start programmer edit section *** (СпрСотр.Фио Set end)
 
                 // *** End programmer edit section *** (СпрСотр.Фио Set end)
+            }
+        }
+        
+        /// <summary>
+        /// СпрСотр.
+        /// </summary>
+        // *** Start programmer edit section *** (СпрСотр.Группа CustomAttributes)
+
+        // *** End programmer edit section *** (СпрСотр.Группа CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Группа"})]
+        [NotNull()]
+        public virtual IIS.Kursovaya_Rabota_2.Группа Группа
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СпрСотр.Группа Get start)
+
+                // *** End programmer edit section *** (СпрСотр.Группа Get start)
+                IIS.Kursovaya_Rabota_2.Группа result = this.fГруппа;
+                // *** Start programmer edit section *** (СпрСотр.Группа Get end)
+
+                // *** End programmer edit section *** (СпрСотр.Группа Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СпрСотр.Группа Set start)
+
+                // *** End programmer edit section *** (СпрСотр.Группа Set start)
+                this.fГруппа = value;
+                // *** Start programmer edit section *** (СпрСотр.Группа Set end)
+
+                // *** End programmer edit section *** (СпрСотр.Группа Set end)
+            }
+        }
+        
+        /// <summary>
+        /// СпрСотр.
+        /// </summary>
+        // *** Start programmer edit section *** (СпрСотр.Дисциплина CustomAttributes)
+
+        // *** End programmer edit section *** (СпрСотр.Дисциплина CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Дисциплина"})]
+        [NotNull()]
+        public virtual IIS.Kursovaya_Rabota_2.Дисциплина Дисциплина
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СпрСотр.Дисциплина Get start)
+
+                // *** End programmer edit section *** (СпрСотр.Дисциплина Get start)
+                IIS.Kursovaya_Rabota_2.Дисциплина result = this.fДисциплина;
+                // *** Start programmer edit section *** (СпрСотр.Дисциплина Get end)
+
+                // *** End programmer edit section *** (СпрСотр.Дисциплина Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СпрСотр.Дисциплина Set start)
+
+                // *** End programmer edit section *** (СпрСотр.Дисциплина Set start)
+                this.fДисциплина = value;
+                // *** Start programmer edit section *** (СпрСотр.Дисциплина Set end)
+
+                // *** End programmer edit section *** (СпрСотр.Дисциплина Set end)
             }
         }
         
