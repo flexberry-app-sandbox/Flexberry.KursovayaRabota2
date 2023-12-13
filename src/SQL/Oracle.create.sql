@@ -9,6 +9,10 @@ CREATE TABLE "СпрСтуд"
 
 	"Фио" NVARCHAR2(255) NULL,
 
+	"Группа" RAW(16) NOT NULL,
+
+	"Дисциплина" RAW(16) NOT NULL,
+
 	 PRIMARY KEY ("primaryKey")
 ) ;
 
@@ -260,6 +264,16 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "СпрСтуд"
+	ADD CONSTRAINT "СпрСтуд_FГруппа_0" FOREIGN KEY ("Группа") REFERENCES "Группа" ("primaryKey");
+
+CREATE INDEX "СпрСтуд_IГруппа" on "СпрСтуд" ("Группа");
+
+ALTER TABLE "СпрСтуд"
+	ADD CONSTRAINT "СпрСтуд_FДисц_9864" FOREIGN KEY ("Дисциплина") REFERENCES "Дисциплина" ("primaryKey");
+
+CREATE INDEX "СпрСтуд_IДисц_2110" on "СпрСтуд" ("Дисциплина");
 
 ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");

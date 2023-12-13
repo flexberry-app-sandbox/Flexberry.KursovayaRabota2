@@ -29,13 +29,23 @@ namespace IIS.Kursovaya_Rabota_2
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СпрСтудE", new string[] {
-            "Фио as \'Фио Студента\'"})]
+            "Фио as \'Фио Студента\'",
+            "Группа as \'Наименование Группы\'",
+            "Группа.Наименование as \'Наименование Группы\'",
+            "Дисциплина as \'Наименование Дисциплины \'",
+            "Дисциплина.Наименование as \'Наименование Дисциплины \'"})]
     [View("СпрСтудL", new string[] {
-            "Фио as \'Фио Студента\'"})]
+            "Фио as \'Фио Студента\'",
+            "Группа.Наименование as \'Наименование Группы\'",
+            "Дисциплина.Наименование as \'Наименование Дисциплины\'"})]
     public class СпрСтуд : ICSSoft.STORMNET.DataObject
     {
         
         private string fФио;
+        
+        private IIS.Kursovaya_Rabota_2.Группа fГруппа;
+        
+        private IIS.Kursovaya_Rabota_2.Дисциплина fДисциплина;
         
         // *** Start programmer edit section *** (СпрСтуд CustomMembers)
 
@@ -71,6 +81,74 @@ namespace IIS.Kursovaya_Rabota_2
                 // *** Start programmer edit section *** (СпрСтуд.Фио Set end)
 
                 // *** End programmer edit section *** (СпрСтуд.Фио Set end)
+            }
+        }
+        
+        /// <summary>
+        /// СпрСтуд.
+        /// </summary>
+        // *** Start programmer edit section *** (СпрСтуд.Группа CustomAttributes)
+
+        // *** End programmer edit section *** (СпрСтуд.Группа CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Группа"})]
+        [NotNull()]
+        public virtual IIS.Kursovaya_Rabota_2.Группа Группа
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СпрСтуд.Группа Get start)
+
+                // *** End programmer edit section *** (СпрСтуд.Группа Get start)
+                IIS.Kursovaya_Rabota_2.Группа result = this.fГруппа;
+                // *** Start programmer edit section *** (СпрСтуд.Группа Get end)
+
+                // *** End programmer edit section *** (СпрСтуд.Группа Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СпрСтуд.Группа Set start)
+
+                // *** End programmer edit section *** (СпрСтуд.Группа Set start)
+                this.fГруппа = value;
+                // *** Start programmer edit section *** (СпрСтуд.Группа Set end)
+
+                // *** End programmer edit section *** (СпрСтуд.Группа Set end)
+            }
+        }
+        
+        /// <summary>
+        /// СпрСтуд.
+        /// </summary>
+        // *** Start programmer edit section *** (СпрСтуд.Дисциплина CustomAttributes)
+
+        // *** End programmer edit section *** (СпрСтуд.Дисциплина CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Дисциплина"})]
+        [NotNull()]
+        public virtual IIS.Kursovaya_Rabota_2.Дисциплина Дисциплина
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СпрСтуд.Дисциплина Get start)
+
+                // *** End programmer edit section *** (СпрСтуд.Дисциплина Get start)
+                IIS.Kursovaya_Rabota_2.Дисциплина result = this.fДисциплина;
+                // *** Start programmer edit section *** (СпрСтуд.Дисциплина Get end)
+
+                // *** End programmer edit section *** (СпрСтуд.Дисциплина Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СпрСтуд.Дисциплина Set start)
+
+                // *** End programmer edit section *** (СпрСтуд.Дисциплина Set start)
+                this.fДисциплина = value;
+                // *** Start programmer edit section *** (СпрСтуд.Дисциплина Set end)
+
+                // *** End programmer edit section *** (СпрСтуд.Дисциплина Set end)
             }
         }
         

@@ -6,6 +6,8 @@
 CREATE TABLE СпрСтуд (
  primaryKey UUID NOT NULL,
  Фио VARCHAR(255) NULL,
+ Группа UUID NOT NULL,
+ Дисциплина UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -139,6 +141,12 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE СпрСтуд ADD CONSTRAINT FKee1310139ebd5d81f59adc76b6b0883b2219c54c FOREIGN KEY (Группа) REFERENCES Группа; 
+CREATE INDEX Indexee1310139ebd5d81f59adc76b6b0883b2219c54c on СпрСтуд (Группа); 
+
+ ALTER TABLE СпрСтуд ADD CONSTRAINT FK51f55bae9df474a3e307ea29af8f1afc78c842f0 FOREIGN KEY (Дисциплина) REFERENCES Дисциплина; 
+CREATE INDEX Index51f55bae9df474a3e307ea29af8f1afc78c842f0 on СпрСтуд (Дисциплина); 
 
  ALTER TABLE СпрСотр ADD CONSTRAINT FKbe29fc5faf6ab74145e14ce31f47c9c143da3eef FOREIGN KEY (Должность) REFERENCES Должность; 
 CREATE INDEX Indexbe29fc5faf6ab74145e14ce31f47c9c143da3eef on СпрСотр (Должность); 

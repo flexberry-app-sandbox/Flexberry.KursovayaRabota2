@@ -28,25 +28,24 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya-rabota-2-спр-сотр-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.title'),
-            icon: 'address card',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-группа-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-группа-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-группа-l.title'),
-            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-дисциплина-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-дисциплина-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-дисциплина-l.title'),
-            icon: 'folder',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-спр-студ-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-студ-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-студ-l.title'),
-            icon: 'briefcase',
+            icon: 'paperclip',
             children: null
           }]
         }

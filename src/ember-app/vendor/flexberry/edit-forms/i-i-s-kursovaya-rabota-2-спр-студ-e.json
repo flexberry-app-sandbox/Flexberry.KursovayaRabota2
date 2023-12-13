@@ -1,5 +1,22 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Группа",
+      "projection": "ГруппаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Дисциплина",
+      "projection": "ДисциплинаL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "Справочник Студенты",
   "name": "IISKursovaya_Rabota_2СпрСтудE",

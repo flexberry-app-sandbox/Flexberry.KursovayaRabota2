@@ -8,6 +8,10 @@ CREATE TABLE [СпрСтуд] (
 
 	 [Фио] VARCHAR(255)  NULL,
 
+	 [Группа] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Дисциплина] UNIQUEIDENTIFIER  NOT NULL,
+
 	 PRIMARY KEY ([primaryKey]))
 
 
