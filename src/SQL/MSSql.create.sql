@@ -2,6 +2,15 @@
 
 
 
+CREATE TABLE [Группа] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Наименование] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Должность] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -18,6 +27,15 @@ CREATE TABLE [СпрСотр] (
 	 [Фио] VARCHAR(255)  NULL,
 
 	 [Должность] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [Дисциплина] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Наименование] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

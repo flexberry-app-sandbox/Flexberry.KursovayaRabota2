@@ -6,6 +6,16 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
+  this.route('i-i-s-kursovaya-rabota-2-группа-l');
+  this.route('i-i-s-kursovaya-rabota-2-группа-e',
+  { path: 'i-i-s-kursovaya-rabota-2-группа-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-2-группа-e.new',
+  { path: 'i-i-s-kursovaya-rabota-2-группа-e/new' });
+  this.route('i-i-s-kursovaya-rabota-2-дисциплина-l');
+  this.route('i-i-s-kursovaya-rabota-2-дисциплина-e',
+  { path: 'i-i-s-kursovaya-rabota-2-дисциплина-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-2-дисциплина-e.new',
+  { path: 'i-i-s-kursovaya-rabota-2-дисциплина-e/new' });
   this.route('i-i-s-kursovaya-rabota-2-должность-l');
   this.route('i-i-s-kursovaya-rabota-2-должность-e',
   { path: 'i-i-s-kursovaya-rabota-2-должность-e/:id' });

@@ -21,6 +21,20 @@
           "caption": "Справочник Сотрудники",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-2-группа-l",
+          "menuName": null,
+          "caption": "Справочник Группы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-2-дисциплина-l",
+          "menuName": null,
+          "caption": "Справочник Дисциплины",
+          "title": "",
+          "children": null
         }
       ]
     }

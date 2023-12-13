@@ -3,6 +3,12 @@
 
 
 
+CREATE TABLE Группа (
+ primaryKey UUID NOT NULL,
+ Наименование VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE Должность (
  primaryKey UUID NOT NULL,
  Наименование VARCHAR(255) NULL,
@@ -13,6 +19,12 @@ CREATE TABLE СпрСотр (
  primaryKey UUID NOT NULL,
  Фио VARCHAR(255) NULL,
  Должность UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Дисциплина (
+ primaryKey UUID NOT NULL,
+ Наименование VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 

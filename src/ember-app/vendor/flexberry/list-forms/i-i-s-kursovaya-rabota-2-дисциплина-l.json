@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-2-дисциплина-e",
+  "editForm": "i-i-s-kursovaya-rabota-2-дисциплина-e",
+  "external": false,
+  "caption": "Справочник Дисциплины",
+  "name": "IISKursovaya_Rabota_2ДисциплинаL",
+  "className": "ДисциплинаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-дисциплина",
+      "modelProjection": "ДисциплинаL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник Дисциплины",
+  "name": "IISKursovaya_Rabota_2ДисциплинаE",
+  "className": "ДисциплинаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-дисциплина",
+      "modelProjection": "ДисциплинаE"
+    }
+  ]
+}

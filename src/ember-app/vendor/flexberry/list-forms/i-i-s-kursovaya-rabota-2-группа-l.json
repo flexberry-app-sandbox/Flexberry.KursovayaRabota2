@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-2-группа-e",
+  "editForm": "i-i-s-kursovaya-rabota-2-группа-e",
+  "external": false,
+  "caption": "Справочник Группы",
+  "name": "IISKursovaya_Rabota_2ГруппаL",
+  "className": "ГруппаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-группа",
+      "modelProjection": "ГруппаL"
+    }
+  ]
+}

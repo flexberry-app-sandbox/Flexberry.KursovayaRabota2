@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISKursovaya_Rabota_2Группа",
+  "modelName": "i-i-s-kursovaya-rabota-2-группа",
+  "className": "Группа",
+  "nameSpace": "IIS.Kursovaya_Rabota_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ГруппаE",
+      "modelName": "i-i-s-kursovaya-rabota-2-группа",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование Группы",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ГруппаL",
+      "modelName": "i-i-s-kursovaya-rabota-2-группа",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование Группы",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

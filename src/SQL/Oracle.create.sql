@@ -2,6 +2,17 @@
 
 
 
+CREATE TABLE "Группа"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Наименование" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Должность"
 (
 
@@ -21,6 +32,17 @@ CREATE TABLE "СпрСотр"
 	"Фио" NVARCHAR2(255) NULL,
 
 	"Должность" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "Дисциплина"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Наименование" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник Группы",
+  "name": "IISKursovaya_Rabota_2ГруппаE",
+  "className": "ГруппаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-группа",
+      "modelProjection": "ГруппаE"
+    }
+  ]
+}
