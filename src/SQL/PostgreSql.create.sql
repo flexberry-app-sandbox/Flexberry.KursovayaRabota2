@@ -17,6 +17,14 @@ CREATE TABLE Группа (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE ПрикрепКн (
+ primaryKey UUID NOT NULL,
+ Дата TIMESTAMP(3) NULL,
+ СпрСотр UUID NOT NULL,
+ СпрСтуд UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE Должность (
  primaryKey UUID NOT NULL,
  Наименование VARCHAR(255) NULL,
@@ -147,6 +155,12 @@ CREATE INDEX Indexee1310139ebd5d81f59adc76b6b0883b2219c54c on СпрСтуд (Г
 
  ALTER TABLE СпрСтуд ADD CONSTRAINT FK51f55bae9df474a3e307ea29af8f1afc78c842f0 FOREIGN KEY (Дисциплина) REFERENCES Дисциплина; 
 CREATE INDEX Index51f55bae9df474a3e307ea29af8f1afc78c842f0 on СпрСтуд (Дисциплина); 
+
+ ALTER TABLE ПрикрепКн ADD CONSTRAINT FKe8e4444a48ce97b75125e95e5c024982e0a88e1b FOREIGN KEY (СпрСотр) REFERENCES СпрСотр; 
+CREATE INDEX Indexe8e4444a48ce97b75125e95e5c024982e0a88e1b on ПрикрепКн (СпрСотр); 
+
+ ALTER TABLE ПрикрепКн ADD CONSTRAINT FKb07a3304dee310e2abc5097cdf36cd4373d7a437 FOREIGN KEY (СпрСтуд) REFERENCES СпрСтуд; 
+CREATE INDEX Indexb07a3304dee310e2abc5097cdf36cd4373d7a437 on ПрикрепКн (СпрСтуд); 
 
  ALTER TABLE СпрСотр ADD CONSTRAINT FKbe29fc5faf6ab74145e14ce31f47c9c143da3eef FOREIGN KEY (Должность) REFERENCES Должность; 
 CREATE INDEX Indexbe29fc5faf6ab74145e14ce31f47c9c143da3eef on СпрСотр (Должность); 

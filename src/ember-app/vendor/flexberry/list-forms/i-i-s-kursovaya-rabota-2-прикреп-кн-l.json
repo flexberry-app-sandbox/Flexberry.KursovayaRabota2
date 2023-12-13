@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-2-прикреп-кн-e",
+  "editForm": "i-i-s-kursovaya-rabota-2-прикреп-кн-e",
+  "external": false,
+  "caption": "Функция: Прикрепление методических материалов на курс",
+  "name": "IISKursovaya_Rabota_2ПрикрепКнL",
+  "className": "ПрикрепКнL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-прикреп-кн",
+      "modelProjection": "ПрикрепКнL"
+    }
+  ]
+}

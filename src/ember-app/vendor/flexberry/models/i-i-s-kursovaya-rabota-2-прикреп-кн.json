@@ -1,0 +1,185 @@
+﻿{
+  "name": "IISKursovaya_Rabota_2ПрикрепКн",
+  "modelName": "i-i-s-kursovaya-rabota-2-прикреп-кн",
+  "className": "ПрикрепКн",
+  "nameSpace": "IIS.Kursovaya_Rabota_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСотр",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-спр-сотр",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСтуд",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-спр-студ",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПрикрепКнE",
+      "modelName": "i-i-s-kursovaya-rabota-2-прикреп-кн",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фио Сотрудника",
+          "lookupValueField": "фио Сотрудника",
+          "relationName": "СпрСотр",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСотр.Группа",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование Группы",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "группа",
+              "relatedTo": "i-i-s-kursovaya-rabota-2-группа",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСотр.Дисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование Дисциплины",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "дисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-2-дисциплина",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио Сотрудника",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Фио Сотрудника",
+          "name": "спрСотр",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-спр-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПрикрепКнL",
+      "modelName": "i-i-s-kursovaya-rabota-2-прикреп-кн",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрСотр",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСотр.Группа",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование Группы",
+                  "hidden": false,
+                  "index": 1
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "группа",
+              "relatedTo": "i-i-s-kursovaya-rabota-2-группа",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСотр.Дисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование Дисциплины",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "дисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-2-дисциплина",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": " Фио Сотрудника",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": " Фио Сотрудника",
+          "name": "спрСотр",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-спр-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

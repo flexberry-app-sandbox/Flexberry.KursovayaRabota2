@@ -21,6 +21,11 @@ Router.map(function () {
   { path: 'i-i-s-kursovaya-rabota-2-должность-e/:id' });
   this.route('i-i-s-kursovaya-rabota-2-должность-e.new',
   { path: 'i-i-s-kursovaya-rabota-2-должность-e/new' });
+  this.route('i-i-s-kursovaya-rabota-2-прикреп-кн-l');
+  this.route('i-i-s-kursovaya-rabota-2-прикреп-кн-e',
+  { path: 'i-i-s-kursovaya-rabota-2-прикреп-кн-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-2-прикреп-кн-e.new',
+  { path: 'i-i-s-kursovaya-rabota-2-прикреп-кн-e/new' });
   this.route('i-i-s-kursovaya-rabota-2-спр-сотр-l');
   this.route('i-i-s-kursovaya-rabota-2-спр-сотр-e',
   { path: 'i-i-s-kursovaya-rabota-2-спр-сотр-e/:id' });

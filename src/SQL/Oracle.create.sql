@@ -28,6 +28,21 @@ CREATE TABLE "Группа"
 ) ;
 
 
+CREATE TABLE "ПрикрепКн"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Дата" DATE NULL,
+
+	"СпрСотр" RAW(16) NOT NULL,
+
+	"СпрСтуд" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Должность"
 (
 
@@ -274,6 +289,16 @@ ALTER TABLE "СпрСтуд"
 	ADD CONSTRAINT "СпрСтуд_FДисц_9864" FOREIGN KEY ("Дисциплина") REFERENCES "Дисциплина" ("primaryKey");
 
 CREATE INDEX "СпрСтуд_IДисц_2110" on "СпрСтуд" ("Дисциплина");
+
+ALTER TABLE "ПрикрепКн"
+	ADD CONSTRAINT "ПрикрепКн_FСп_7698" FOREIGN KEY ("СпрСотр") REFERENCES "СпрСотр" ("primaryKey");
+
+CREATE INDEX "ПрикрепКн_IСп_1983" on "ПрикрепКн" ("СпрСотр");
+
+ALTER TABLE "ПрикрепКн"
+	ADD CONSTRAINT "ПрикрепКн_FСп_9131" FOREIGN KEY ("СпрСтуд") REFERENCES "СпрСтуд" ("primaryKey");
+
+CREATE INDEX "ПрикрепКн_IСп_5364" on "ПрикрепКн" ("СпрСтуд");
 
 ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");

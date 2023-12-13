@@ -24,6 +24,19 @@ CREATE TABLE [Группа] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [ПрикрепКн] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Дата] DATETIME  NULL,
+
+	 [СпрСотр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрСтуд] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Должность] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

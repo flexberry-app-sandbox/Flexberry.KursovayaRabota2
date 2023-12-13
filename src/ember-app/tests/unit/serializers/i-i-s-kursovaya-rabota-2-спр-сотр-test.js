@@ -12,6 +12,7 @@ moduleForModel('i-i-s-kursovaya-rabota-2-спр-сотр', 'Unit | Serializer | 
     'model:i-i-s-kursovaya-rabota-2-группа',
     'model:i-i-s-kursovaya-rabota-2-дисциплина',
     'model:i-i-s-kursovaya-rabota-2-должность',
+    'model:i-i-s-kursovaya-rabota-2-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-2-спр-сотр',
     'model:i-i-s-kursovaya-rabota-2-спр-студ',
     'validator:ds-error',

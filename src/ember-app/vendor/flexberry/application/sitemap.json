@@ -42,6 +42,13 @@
           "caption": "Справочник Студенты",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-2-прикреп-кн-l",
+          "menuName": null,
+          "caption": "Функция: Прикрепление методических материалов на курс",
+          "title": "",
+          "children": null
         }
       ]
     }

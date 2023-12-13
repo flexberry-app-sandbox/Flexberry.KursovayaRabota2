@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрСотр",
+      "projection": "СпрСотрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Функция: Прикрепление методических материалов на курс",
+  "name": "IISKursovaya_Rabota_2ПрикрепКнE",
+  "className": "ПрикрепКнE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-прикреп-кн",
+      "modelProjection": "ПрикрепКнE"
+    }
+  ]
+}
