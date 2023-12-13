@@ -6,7 +6,8 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   дата: DS.attr('date'),
-  спрСотр: DS.belongsTo('i-i-s-kursovaya-rabota-2-спр-сотр', { inverse: null, async: false })
+  спрСотр: DS.belongsTo('i-i-s-kursovaya-rabota-2-спр-сотр', { inverse: null, async: false }),
+  базДан: DS.hasMany('i-i-s-kursovaya-rabota-2-баз-дан', { inverse: 'прикрепКн', async: false })
 });
 
 export let ValidationRules = {
@@ -24,6 +25,13 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
+  базДан: {
+    descriptionKey: 'models.i-i-s-kursovaya-rabota-2-прикреп-кн.validations.базДан.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -36,7 +44,18 @@ export let defineProjections = function (modelClass) {
       дисциплина: belongsTo('i-i-s-kursovaya-rabota-2-дисциплина', '', {
         наименование: attr('Наименование Дисциплины', { index: 3 })
       }, { index: -1, hidden: true })
-    }, { index: 0, displayMemberPath: 'фио Сотрудника' })
+    }, { index: 0, displayMemberPath: 'фио Сотрудника' }),
+    базДан: hasMany('i-i-s-kursovaya-rabota-2-баз-дан', 'База Данных', {
+      спрСтуд: belongsTo('i-i-s-kursovaya-rabota-2-спр-студ', 'Фио Студента', {
+        фио: attr('Фио Студента', { index: 1 }),
+        группа: belongsTo('i-i-s-kursovaya-rabota-2-группа', '', {
+          наименование: attr('Наименование Группы', { index: 2 })
+        }, { index: -1, hidden: true }),
+        дисциплина: belongsTo('i-i-s-kursovaya-rabota-2-дисциплина', '', {
+          наименование: attr('Наименование Дисциплины', { index: 3 })
+        }, { index: -1, hidden: true })
+      }, { index: 0 })
+    })
   });
 
   modelClass.defineProjection('ПрикрепКнL', 'i-i-s-kursovaya-rabota-2-прикреп-кн', {

@@ -9,6 +9,7 @@ moduleForModel('i-i-s-kursovaya-rabota-2-спр-сотр', 'Unit | Serializer | 
     'transform:decimal',
     'transform:guid',
 
+    'model:i-i-s-kursovaya-rabota-2-баз-дан',
     'model:i-i-s-kursovaya-rabota-2-группа',
     'model:i-i-s-kursovaya-rabota-2-дисциплина',
     'model:i-i-s-kursovaya-rabota-2-должность',

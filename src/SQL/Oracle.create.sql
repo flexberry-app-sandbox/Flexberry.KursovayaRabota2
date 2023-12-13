@@ -69,6 +69,21 @@ CREATE TABLE "СпрСотр"
 ) ;
 
 
+CREATE TABLE "БазДан"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Время" DATE NULL,
+
+	"СпрСтуд" RAW(16) NOT NULL,
+
+	"ПрикрепКн" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Дисциплина"
 (
 
@@ -307,6 +322,16 @@ ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");
 
 CREATE INDEX "СпрСотр_IДолж_3774" on "СпрСотр" ("Должность");
+
+ALTER TABLE "БазДан"
+	ADD CONSTRAINT "БазДан_FСпрСтуд_0" FOREIGN KEY ("СпрСтуд") REFERENCES "СпрСтуд" ("primaryKey");
+
+CREATE INDEX "БазДан_IСпрСтуд" on "БазДан" ("СпрСтуд");
+
+ALTER TABLE "БазДан"
+	ADD CONSTRAINT "БазДан_FПрикр_6507" FOREIGN KEY ("ПрикрепКн") REFERENCES "ПрикрепКн" ("primaryKey");
+
+CREATE INDEX "БазДан_IПрикр_1698" on "БазДан" ("ПрикрепКн");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");

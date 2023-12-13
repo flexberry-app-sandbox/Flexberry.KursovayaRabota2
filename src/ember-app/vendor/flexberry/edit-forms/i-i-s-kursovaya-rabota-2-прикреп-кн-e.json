@@ -7,6 +7,14 @@
       "relationName": "СпрСотр",
       "projection": "СпрСотрL",
       "detailModelName": null
+    },
+    {
+      "master": "спрСтуд",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "БазДан.СпрСтуд",
+      "projection": "СпрСтудL",
+      "detailModelName": "i-i-s-kursovaya-rabota-2-баз-дан"
     }
   ],
   "external": false,

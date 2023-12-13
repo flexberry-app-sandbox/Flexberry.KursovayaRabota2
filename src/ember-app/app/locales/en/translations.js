@@ -13,6 +13,7 @@ import IISKursovaya_Rabota_2ДолжностьEForm from './forms/i-i-s-kursovay
 import IISKursovaya_Rabota_2ПрикрепКнEForm from './forms/i-i-s-kursovaya-rabota-2-прикреп-кн-e';
 import IISKursovaya_Rabota_2СпрСотрEForm from './forms/i-i-s-kursovaya-rabota-2-спр-сотр-e';
 import IISKursovaya_Rabota_2СпрСтудEForm from './forms/i-i-s-kursovaya-rabota-2-спр-студ-e';
+import IISKursovaya_Rabota_2БазДанModel from './models/i-i-s-kursovaya-rabota-2-баз-дан';
 import IISKursovaya_Rabota_2ГруппаModel from './models/i-i-s-kursovaya-rabota-2-группа';
 import IISKursovaya_Rabota_2ДисциплинаModel from './models/i-i-s-kursovaya-rabota-2-дисциплина';
 import IISKursovaya_Rabota_2ДолжностьModel from './models/i-i-s-kursovaya-rabota-2-должность';
@@ -25,6 +26,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-kursovaya-rabota-2-баз-дан': IISKursovaya_Rabota_2БазДанModel,
     'i-i-s-kursovaya-rabota-2-группа': IISKursovaya_Rabota_2ГруппаModel,
     'i-i-s-kursovaya-rabota-2-дисциплина': IISKursovaya_Rabota_2ДисциплинаModel,
     'i-i-s-kursovaya-rabota-2-должность': IISKursovaya_Rabota_2ДолжностьModel,

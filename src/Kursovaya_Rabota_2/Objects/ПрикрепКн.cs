@@ -33,6 +33,8 @@ namespace IIS.Kursovaya_Rabota_2
             "СпрСотр.Фио as \'Фио Сотрудника\'",
             "СпрСотр.Группа.Наименование as \'Наименование Группы\'",
             "СпрСотр.Дисциплина.Наименование as \'Наименование Дисциплины\'"})]
+    [AssociatedDetailViewAttribute("ПрикрепКнE", "БазДан", "БазДанE", true, "", "База Данных", true, new string[] {
+            ""})]
     [MasterViewDefineAttribute("ПрикрепКнE", "СпрСотр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Сотрудника")]
     [View("ПрикрепКнL", new string[] {
             "СпрСотр.Фио as \' Фио Сотрудника\'",
@@ -44,6 +46,8 @@ namespace IIS.Kursovaya_Rabota_2
         private System.DateTime fДата;
         
         private IIS.Kursovaya_Rabota_2.СпрСотр fСпрСотр;
+        
+        private IIS.Kursovaya_Rabota_2.DetailArrayOfБазДан fБазДан;
         
         // *** Start programmer edit section *** (ПрикрепКн CustomMembers)
 
@@ -112,6 +116,41 @@ namespace IIS.Kursovaya_Rabota_2
                 // *** Start programmer edit section *** (ПрикрепКн.СпрСотр Set end)
 
                 // *** End programmer edit section *** (ПрикрепКн.СпрСотр Set end)
+            }
+        }
+        
+        /// <summary>
+        /// ПрикрепКн.
+        /// </summary>
+        // *** Start programmer edit section *** (ПрикрепКн.БазДан CustomAttributes)
+
+        // *** End programmer edit section *** (ПрикрепКн.БазДан CustomAttributes)
+        public virtual IIS.Kursovaya_Rabota_2.DetailArrayOfБазДан БазДан
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ПрикрепКн.БазДан Get start)
+
+                // *** End programmer edit section *** (ПрикрепКн.БазДан Get start)
+                if ((this.fБазДан == null))
+                {
+                    this.fБазДан = new IIS.Kursovaya_Rabota_2.DetailArrayOfБазДан(this);
+                }
+                IIS.Kursovaya_Rabota_2.DetailArrayOfБазДан result = this.fБазДан;
+                // *** Start programmer edit section *** (ПрикрепКн.БазДан Get end)
+
+                // *** End programmer edit section *** (ПрикрепКн.БазДан Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ПрикрепКн.БазДан Set start)
+
+                // *** End programmer edit section *** (ПрикрепКн.БазДан Set start)
+                this.fБазДан = value;
+                // *** Start programmer edit section *** (ПрикрепКн.БазДан Set end)
+
+                // *** End programmer edit section *** (ПрикрепКн.БазДан Set end)
             }
         }
         

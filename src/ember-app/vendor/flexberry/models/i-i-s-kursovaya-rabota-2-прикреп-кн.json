@@ -25,7 +25,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "базДан",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-баз-дан",
+      "inverse": "прикрепКн"
+    }
+  ],
   "projections": [
     {
       "name": "ПрикрепКнE",
@@ -97,7 +103,15 @@
           "inverse": null
         }
       ],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "БазДанE",
+          "caption": "База Данных",
+          "name": "базДан",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-баз-дан",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "ПрикрепКнL",

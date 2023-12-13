@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Entity implementation class for Entity: ПрикрепКн
@@ -35,6 +36,9 @@ public class PrikrepKn {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "SprSotr", insertable = false, updatable = false)
     private SprSotr sprsotr;
+
+    @OneToMany(mappedBy = "prikrepkn", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    private List<BazDan> bazdans;
 
 
     public PrikrepKn() {

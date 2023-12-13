@@ -1,0 +1,113 @@
+﻿{
+  "name": "IISKursovaya_Rabota_2БазДан",
+  "modelName": "i-i-s-kursovaya-rabota-2-баз-дан",
+  "className": "БазДан",
+  "nameSpace": "IIS.Kursovaya_Rabota_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСтуд",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-спр-студ",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "прикрепКн",
+      "relatedTo": "i-i-s-kursovaya-rabota-2-прикреп-кн",
+      "inverse": "базДан"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "БазДанE",
+      "modelName": "i-i-s-kursovaya-rabota-2-баз-дан",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрСтуд",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСтуд.Группа",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование Группы",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "группа",
+              "relatedTo": "i-i-s-kursovaya-rabota-2-группа",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСтуд.Дисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Наименование Дисциплины",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "дисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-2-дисциплина",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио Студента",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Фио Студента",
+          "name": "спрСтуд",
+          "relatedTo": "i-i-s-kursovaya-rabota-2-спр-студ",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

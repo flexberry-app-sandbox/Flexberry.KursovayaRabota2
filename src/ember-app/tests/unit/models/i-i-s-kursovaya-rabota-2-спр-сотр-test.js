@@ -3,6 +3,7 @@ import { moduleForModel, test } from 'ember-qunit';
 moduleForModel('i-i-s-kursovaya-rabota-2-спр-сотр', 'Unit | Model | i-i-s-kursovaya-rabota-2-спр-сотр', {
   // Specify the other units that are required for this test.
   needs: [
+    'model:i-i-s-kursovaya-rabota-2-баз-дан',
     'model:i-i-s-kursovaya-rabota-2-группа',
     'model:i-i-s-kursovaya-rabota-2-дисциплина',
     'model:i-i-s-kursovaya-rabota-2-должность',

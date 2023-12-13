@@ -72,4 +72,18 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.спрСотр.дисциплина "наименование" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya-rabota-2-прикреп-кн-e.базДан-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="базДанGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.базДан
+      content=model.базДан
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "базДан" "isInvalid") "error")
+      data-test-i-i-s-kursovaya-rabota-2-прикреп-кн-e-базДан=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "базДан" "message")}}
+  </div>
 </form>
