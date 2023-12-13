@@ -13,6 +13,19 @@ CREATE TABLE "Должность"
 ) ;
 
 
+CREATE TABLE "СпрСотр"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
+
+	"Должность" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "STORMNETLOCKDATA"
 (
 
@@ -210,6 +223,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "СпрСотр"
+	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");
+
+CREATE INDEX "СпрСотр_IДолж_3774" on "СпрСотр" ("Должность");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");

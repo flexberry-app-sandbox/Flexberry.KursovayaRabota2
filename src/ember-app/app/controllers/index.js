@@ -22,7 +22,13 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya-rabota-2-должность-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-должность-l.title'),
-            icon: 'book',
+            icon: 'briefcase',
+            children: null
+          }, {
+            link: 'i-i-s-kursovaya-rabota-2-спр-сотр-l',
+            caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.caption'),
+            title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.title'),
+            icon: 'building',
             children: null
           }]
         }

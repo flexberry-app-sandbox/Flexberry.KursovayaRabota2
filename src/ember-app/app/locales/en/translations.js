@@ -2,15 +2,19 @@ import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
 
 import IISKursovaya_Rabota_2ДолжностьLForm from './forms/i-i-s-kursovaya-rabota-2-должность-l';
+import IISKursovaya_Rabota_2СпрСотрLForm from './forms/i-i-s-kursovaya-rabota-2-спр-сотр-l';
 import IISKursovaya_Rabota_2ДолжностьEForm from './forms/i-i-s-kursovaya-rabota-2-должность-e';
+import IISKursovaya_Rabota_2СпрСотрEForm from './forms/i-i-s-kursovaya-rabota-2-спр-сотр-e';
 import IISKursovaya_Rabota_2ДолжностьModel from './models/i-i-s-kursovaya-rabota-2-должность';
+import IISKursovaya_Rabota_2СпрСотрModel from './models/i-i-s-kursovaya-rabota-2-спр-сотр';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
-    'i-i-s-kursovaya-rabota-2-должность': IISKursovaya_Rabota_2ДолжностьModel
+    'i-i-s-kursovaya-rabota-2-должность': IISKursovaya_Rabota_2ДолжностьModel,
+    'i-i-s-kursovaya-rabota-2-спр-сотр': IISKursovaya_Rabota_2СпрСотрModel
   },
 
   'application-name': 'Kursovaya_ rabota_2',
@@ -82,6 +86,10 @@ $.extend(true, translations, {
           'i-i-s-kursovaya-rabota-2-должность-l': {
             caption: 'Справочник Должности',
             title: ''
+          },
+          'i-i-s-kursovaya-rabota-2-спр-сотр-l': {
+            caption: 'Справочник Сотрудники',
+            title: ''
           }
         }
       }
@@ -96,7 +104,9 @@ $.extend(true, translations, {
       'delete-error-message-caption': 'Delete operation failed'
     },
     'i-i-s-kursovaya-rabota-2-должность-l': IISKursovaya_Rabota_2ДолжностьLForm,
-    'i-i-s-kursovaya-rabota-2-должность-e': IISKursovaya_Rabota_2ДолжностьEForm
+    'i-i-s-kursovaya-rabota-2-спр-сотр-l': IISKursovaya_Rabota_2СпрСотрLForm,
+    'i-i-s-kursovaya-rabota-2-должность-e': IISKursovaya_Rabota_2ДолжностьEForm,
+    'i-i-s-kursovaya-rabota-2-спр-сотр-e': IISKursovaya_Rabota_2СпрСотрEForm
   },
 
 });

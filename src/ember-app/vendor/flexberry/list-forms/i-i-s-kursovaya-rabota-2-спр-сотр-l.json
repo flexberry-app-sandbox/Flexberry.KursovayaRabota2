@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-2-спр-сотр-e",
+  "editForm": "i-i-s-kursovaya-rabota-2-спр-сотр-e",
+  "external": false,
+  "caption": "Справочник Сотрудники",
+  "name": "IISKursovaya_Rabota_2СпрСотрL",
+  "className": "СпрСотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-спр-сотр",
+      "modelProjection": "СпрСотрL"
+    }
+  ]
+}

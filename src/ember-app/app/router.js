@@ -11,6 +11,11 @@ Router.map(function () {
   { path: 'i-i-s-kursovaya-rabota-2-должность-e/:id' });
   this.route('i-i-s-kursovaya-rabota-2-должность-e.new',
   { path: 'i-i-s-kursovaya-rabota-2-должность-e/new' });
+  this.route('i-i-s-kursovaya-rabota-2-спр-сотр-l');
+  this.route('i-i-s-kursovaya-rabota-2-спр-сотр-e',
+  { path: 'i-i-s-kursovaya-rabota-2-спр-сотр-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-2-спр-сотр-e.new',
+  { path: 'i-i-s-kursovaya-rabota-2-спр-сотр-e/new' });
 });
 
 export default Router;
