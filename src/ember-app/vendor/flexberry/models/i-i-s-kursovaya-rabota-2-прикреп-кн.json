@@ -23,13 +23,6 @@
       "name": "спрСотр",
       "relatedTo": "i-i-s-kursovaya-rabota-2-спр-сотр",
       "inverse": null
-    },
-    {
-      "polymorphic": false,
-      "presence": true,
-      "name": "спрСтуд",
-      "relatedTo": "i-i-s-kursovaya-rabota-2-спр-студ",
-      "inverse": null
     }
   ],
   "hasMany": [],

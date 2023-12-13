@@ -1,0 +1,1 @@
+docker-compose -p kursovaya_rabota_2-java down

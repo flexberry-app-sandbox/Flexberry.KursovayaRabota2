@@ -45,8 +45,6 @@ namespace IIS.Kursovaya_Rabota_2
         
         private IIS.Kursovaya_Rabota_2.СпрСотр fСпрСотр;
         
-        private IIS.Kursovaya_Rabota_2.СпрСтуд fСпрСтуд;
-        
         // *** Start programmer edit section *** (ПрикрепКн CustomMembers)
 
         // *** End programmer edit section *** (ПрикрепКн CustomMembers)
@@ -114,40 +112,6 @@ namespace IIS.Kursovaya_Rabota_2
                 // *** Start programmer edit section *** (ПрикрепКн.СпрСотр Set end)
 
                 // *** End programmer edit section *** (ПрикрепКн.СпрСотр Set end)
-            }
-        }
-        
-        /// <summary>
-        /// ПрикрепКн.
-        /// </summary>
-        // *** Start programmer edit section *** (ПрикрепКн.СпрСтуд CustomAttributes)
-
-        // *** End programmer edit section *** (ПрикрепКн.СпрСтуд CustomAttributes)
-        [PropertyStorage(new string[] {
-                "СпрСтуд"})]
-        [NotNull()]
-        public virtual IIS.Kursovaya_Rabota_2.СпрСтуд СпрСтуд
-        {
-            get
-            {
-                // *** Start programmer edit section *** (ПрикрепКн.СпрСтуд Get start)
-
-                // *** End programmer edit section *** (ПрикрепКн.СпрСтуд Get start)
-                IIS.Kursovaya_Rabota_2.СпрСтуд result = this.fСпрСтуд;
-                // *** Start programmer edit section *** (ПрикрепКн.СпрСтуд Get end)
-
-                // *** End programmer edit section *** (ПрикрепКн.СпрСтуд Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (ПрикрепКн.СпрСтуд Set start)
-
-                // *** End programmer edit section *** (ПрикрепКн.СпрСтуд Set start)
-                this.fСпрСтуд = value;
-                // *** Start programmer edit section *** (ПрикрепКн.СпрСтуд Set end)
-
-                // *** End programmer edit section *** (ПрикрепКн.СпрСтуд Set end)
             }
         }
         

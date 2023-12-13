@@ -37,8 +37,6 @@ CREATE TABLE "ПрикрепКн"
 
 	"СпрСотр" RAW(16) NOT NULL,
 
-	"СпрСтуд" RAW(16) NOT NULL,
-
 	 PRIMARY KEY ("primaryKey")
 ) ;
 
@@ -61,11 +59,11 @@ CREATE TABLE "СпрСотр"
 
 	"Фио" NVARCHAR2(255) NULL,
 
-	"Должность" RAW(16) NOT NULL,
-
 	"Группа" RAW(16) NOT NULL,
 
 	"Дисциплина" RAW(16) NOT NULL,
+
+	"Должность" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -295,16 +293,6 @@ ALTER TABLE "ПрикрепКн"
 
 CREATE INDEX "ПрикрепКн_IСп_1983" on "ПрикрепКн" ("СпрСотр");
 
-ALTER TABLE "ПрикрепКн"
-	ADD CONSTRAINT "ПрикрепКн_FСп_9131" FOREIGN KEY ("СпрСтуд") REFERENCES "СпрСтуд" ("primaryKey");
-
-CREATE INDEX "ПрикрепКн_IСп_5364" on "ПрикрепКн" ("СпрСтуд");
-
-ALTER TABLE "СпрСотр"
-	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");
-
-CREATE INDEX "СпрСотр_IДолж_3774" on "СпрСотр" ("Должность");
-
 ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FГруппа_0" FOREIGN KEY ("Группа") REFERENCES "Группа" ("primaryKey");
 
@@ -314,6 +302,11 @@ ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FДисц_5618" FOREIGN KEY ("Дисциплина") REFERENCES "Дисциплина" ("primaryKey");
 
 CREATE INDEX "СпрСотр_IДисци_451" on "СпрСотр" ("Дисциплина");
+
+ALTER TABLE "СпрСотр"
+	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");
+
+CREATE INDEX "СпрСотр_IДолж_3774" on "СпрСотр" ("Должность");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");
