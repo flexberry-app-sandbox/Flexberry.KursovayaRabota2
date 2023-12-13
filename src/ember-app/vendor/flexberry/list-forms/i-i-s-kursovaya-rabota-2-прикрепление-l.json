@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-2-прикрепление-e",
+  "editForm": "i-i-s-kursovaya-rabota-2-прикрепление-e",
+  "external": false,
+  "caption": "Прикрепление студента к библиотеке",
+  "name": "IISKursovaya_Rabota_2ПрикреплениеL",
+  "className": "ПрикреплениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-прикрепление",
+      "modelProjection": "ПрикреплениеL"
+    }
+  ]
+}

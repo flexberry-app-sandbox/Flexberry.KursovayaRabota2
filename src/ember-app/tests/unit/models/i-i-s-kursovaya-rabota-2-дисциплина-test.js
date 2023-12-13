@@ -9,6 +9,7 @@ moduleForModel('i-i-s-kursovaya-rabota-2-дисциплина', 'Unit | Model | 
     'model:i-i-s-kursovaya-rabota-2-должность',
     'model:i-i-s-kursovaya-rabota-2-материал',
     'model:i-i-s-kursovaya-rabota-2-прикреп-кн',
+    'model:i-i-s-kursovaya-rabota-2-прикрепление',
     'model:i-i-s-kursovaya-rabota-2-спр-сотр',
     'model:i-i-s-kursovaya-rabota-2-спр-студ',
     'validator:ds-error',

@@ -31,6 +31,11 @@ Router.map(function () {
   { path: 'i-i-s-kursovaya-rabota-2-прикреп-кн-e/:id' });
   this.route('i-i-s-kursovaya-rabota-2-прикреп-кн-e.new',
   { path: 'i-i-s-kursovaya-rabota-2-прикреп-кн-e/new' });
+  this.route('i-i-s-kursovaya-rabota-2-прикрепление-l');
+  this.route('i-i-s-kursovaya-rabota-2-прикрепление-e',
+  { path: 'i-i-s-kursovaya-rabota-2-прикрепление-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-2-прикрепление-e.new',
+  { path: 'i-i-s-kursovaya-rabota-2-прикрепление-e/new' });
   this.route('i-i-s-kursovaya-rabota-2-спр-сотр-l');
   this.route('i-i-s-kursovaya-rabota-2-спр-сотр-e',
   { path: 'i-i-s-kursovaya-rabota-2-спр-сотр-e/:id' });

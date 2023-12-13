@@ -56,6 +56,13 @@
           "caption": "Учебный материал",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-2-прикрепление-l",
+          "menuName": null,
+          "caption": "Функция : Контроль прикрепления студента к библиотеке",
+          "title": "",
+          "children": null
         }
       ]
     }

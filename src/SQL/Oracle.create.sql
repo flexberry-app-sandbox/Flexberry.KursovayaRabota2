@@ -69,6 +69,19 @@ CREATE TABLE "СпрСотр"
 ) ;
 
 
+CREATE TABLE "Прикрепление"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Дата" DATE NULL,
+
+	"СпрСотр" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Материал"
 (
 
@@ -339,6 +352,11 @@ ALTER TABLE "СпрСотр"
 	ADD CONSTRAINT "СпрСотр_FДолж_1198" FOREIGN KEY ("Должность") REFERENCES "Должность" ("primaryKey");
 
 CREATE INDEX "СпрСотр_IДолж_3774" on "СпрСотр" ("Должность");
+
+ALTER TABLE "Прикрепление"
+	ADD CONSTRAINT "Прикрепление__6190" FOREIGN KEY ("СпрСотр") REFERENCES "СпрСотр" ("primaryKey");
+
+CREATE INDEX "Прикрепление_I_946" on "Прикрепление" ("СпрСотр");
 
 ALTER TABLE "Материал"
 	ADD CONSTRAINT "Материал_FДис_4309" FOREIGN KEY ("Дисциплина") REFERENCES "Дисциплина" ("primaryKey");

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрСотр",
+      "projection": "СпрСотрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Прикрепление студента к библиотеке",
+  "name": "IISKursovaya_Rabota_2ПрикреплениеE",
+  "className": "ПрикреплениеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-2-прикрепление",
+      "modelProjection": "ПрикреплениеE"
+    }
+  ]
+}
