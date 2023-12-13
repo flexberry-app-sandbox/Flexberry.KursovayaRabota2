@@ -40,8 +40,8 @@
       "attrs": [],
       "belongsTo": [
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "Фио Студента",
+          "lookupValueField": "фио Студента",
           "relationName": "СпрСтуд",
           "belongsTo": [
             {

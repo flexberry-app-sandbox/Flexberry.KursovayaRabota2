@@ -10,7 +10,7 @@
     },
     {
       "master": "спрСтуд",
-      "displayAttributeName": null,
+      "displayAttributeName": "фио Студента",
       "required": true,
       "relationName": "БазДан.СпрСтуд",
       "projection": "СпрСтудL",

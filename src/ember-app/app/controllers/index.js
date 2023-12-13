@@ -22,36 +22,36 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya-rabota-2-должность-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-должность-l.title'),
-            icon: 'calendar',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-спр-сотр-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-сотр-l.title'),
-            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-группа-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-группа-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-группа-l.title'),
-            icon: 'address card',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-дисциплина-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-дисциплина-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-дисциплина-l.title'),
-            icon: 'book',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-спр-студ-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-студ-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-спр-студ-l.title'),
-            icon: 'archive',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-2-прикреп-кн-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-прикреп-кн-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-2.i-i-s-kursovaya-rabota-2-прикреп-кн-l.title'),
+            icon: 'chart bar',
             children: null
           }]
         }

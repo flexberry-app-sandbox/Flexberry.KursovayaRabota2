@@ -33,7 +33,7 @@ namespace IIS.Kursovaya_Rabota_2
             "СпрСтуд.Фио as \'Фио Студента\'",
             "СпрСтуд.Группа.Наименование as \'Наименование Группы\'",
             "СпрСтуд.Дисциплина.Наименование as \'Наименование Дисциплины\'"})]
-    [MasterViewDefineAttribute("БазДанE", "СпрСтуд", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+    [MasterViewDefineAttribute("БазДанE", "СпрСтуд", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Студента")]
     public class БазДан : ICSSoft.STORMNET.DataObject
     {
         

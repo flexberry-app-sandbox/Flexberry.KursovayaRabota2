@@ -54,7 +54,7 @@ export let defineProjections = function (modelClass) {
         дисциплина: belongsTo('i-i-s-kursovaya-rabota-2-дисциплина', '', {
           наименование: attr('Наименование Дисциплины', { index: 3 })
         }, { index: -1, hidden: true })
-      }, { index: 0 })
+      }, { index: 0, displayMemberPath: 'фио Студента' })
     })
   });
 
