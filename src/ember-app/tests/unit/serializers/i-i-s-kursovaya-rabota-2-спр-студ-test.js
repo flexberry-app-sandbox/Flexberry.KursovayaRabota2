@@ -1,9 +1,9 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-kursovaya-rabota-2-группа', 'Unit | Serializer | i-i-s-kursovaya-rabota-2-группа', {
+moduleForModel('i-i-s-kursovaya-rabota-2-спр-студ', 'Unit | Serializer | i-i-s-kursovaya-rabota-2-спр-студ', {
   // Specify the other units that are required for this test.
   needs: [
-    'serializer:i-i-s-kursovaya-rabota-2-группа',
+    'serializer:i-i-s-kursovaya-rabota-2-спр-студ',
     'service:syncer',
     'transform:file',
     'transform:decimal',

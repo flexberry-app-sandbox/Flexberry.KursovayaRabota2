@@ -35,6 +35,13 @@
           "caption": "Справочник Дисциплины",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-2-спр-студ-l",
+          "menuName": null,
+          "caption": "Справочник Студенты",
+          "title": "",
+          "children": null
         }
       ]
     }

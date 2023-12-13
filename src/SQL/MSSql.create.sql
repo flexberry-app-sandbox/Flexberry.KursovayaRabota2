@@ -2,6 +2,15 @@
 
 
 
+CREATE TABLE [СпрСтуд] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Фио] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Группа] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

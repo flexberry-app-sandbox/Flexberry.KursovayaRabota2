@@ -13,6 +13,7 @@ moduleForModel('i-i-s-kursovaya-rabota-2-дисциплина', 'Unit | Serializ
     'model:i-i-s-kursovaya-rabota-2-дисциплина',
     'model:i-i-s-kursovaya-rabota-2-должность',
     'model:i-i-s-kursovaya-rabota-2-спр-сотр',
+    'model:i-i-s-kursovaya-rabota-2-спр-студ',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

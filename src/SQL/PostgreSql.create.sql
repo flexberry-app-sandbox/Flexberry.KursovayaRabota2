@@ -3,6 +3,12 @@
 
 
 
+CREATE TABLE СпрСтуд (
+ primaryKey UUID NOT NULL,
+ Фио VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE Группа (
  primaryKey UUID NOT NULL,
  Наименование VARCHAR(255) NULL,
